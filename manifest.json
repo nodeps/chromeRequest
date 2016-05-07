@@ -1,0 +1,27 @@
+{
+    "name": "QQMacMgr Plugin",
+    "description": "URL Firewall Plugin for Chrome",
+    "version": "1.0",
+    "manifest_version": 2,
+    "icons": { 
+    "16": "imgs/ico.png",
+    "32": "imgs/ico.png",
+    "48": "imgs/ico.png",
+    "128": "imgs/ico.png"
+    },
+    "background": { 
+      "scripts": [
+          "lib/jquery.min.js",
+          "background.js"
+      ] 
+    },
+  "permissions": [
+      "tabs",
+      "*://*/*",
+      "background",
+      "webRequest",
+      "webRequestBlocking",
+      "storage",
+      "browsingData"
+  ]
+}
